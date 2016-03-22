@@ -1,0 +1,22 @@
+{
+  "name": "code-muse",
+  "main": "./lib/code-muse",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [],
+  "activationCommands": {
+    "atom-workspace": "code-muse:toggle"
+  },
+  "repository": "https://github.com/atom/code-muse",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "chordplayer": "*",
+    "noteplayer": "*"
+  },
+  "devDependencies": {
+    "chordplayer": "^1.1.5"
+  }
+}

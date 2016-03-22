@@ -32,11 +32,11 @@ module.exports = CodeMuse =
       atom.notifications.addSuccess "Shhh!"
 
 g =  np.buildFromName "G4"
-b =  np.buildFromName "B4"
-c =  np.buildFromName "C4"
-d =  np.buildFromName "D4"
-e =  np.buildFromName "E4"
-f =  np.buildFromName "F4"
+b =  np.buildFromName "B5"
+c =  np.buildFromName "D5"
+d =  np.buildFromName "F5"
+e =  np.buildFromName "A6"
+f =  np.buildFromName "C6"
 
 playKey = (code) ->
   return if !musicode

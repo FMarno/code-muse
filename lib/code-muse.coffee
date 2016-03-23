@@ -26,26 +26,17 @@ module.exports = CodeMuse =
     console.log 'CodeMuse was toggled!'
     if !musicode
       musicode = true
-      atom.notifications.addSuccess "Get Musicode!"
+      atom.notifications.addSuccess "Type some keys to play!"
     else
       musicode = false
       atom.notifications.addSuccess "Shhh!"
 
-g =  np.buildFromName "Ab4"
-b =  np.buildFromName "C4"
-c =  np.buildFromName "Eb4"
-d =  np.buildFromName "G4"
-e =  np.buildFromName "C5"
-f =  np.buildFromName "Eb5"
 
+# nodeplayer only allows for 6 notes at a time
+notes = (np.buildFromName note for note in ["Ab4", "C4", "Eb4", "G4", "C5", "Eb5"])
 
+# plays a note given a key code
 playKey = (code) ->
   return if !musicode
-  chord = switch code % 6
-    when 0 then g
-    when 1 then b
-    when 2 then c
-    when 3 then d
-    when 4 then e
-    else f
-  chord.play()
+  console.log notes[0]
+  notes[code % 6].play()

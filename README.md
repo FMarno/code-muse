@@ -1,6 +1,12 @@
-# code-muse package
+# Code Muse
 
-A short description of your package.
+Play music in your favorite text editor!
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
-# code-muse
+## Installing
+
+```
+git clone https://github.com/FMarno/code-muse
+cd code-muse
+apm link
+npm install
+```
